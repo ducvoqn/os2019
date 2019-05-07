@@ -1,0 +1,34 @@
+Last login: Thu Apr 25 11:19:01 on ttys001
+vos-MacBook-Air:~ voduc$ ls /usr/bin | grep '\<[a-z]*file[a-z]*\>'
+cvmkfile
+file
+filebyproc.d
+iofile.d
+iofileb.d
+iprofiler
+profiles
+vos-MacBook-Air:~ voduc$ wc -l / etc/passwd
+wc: /: read: Is a directory
+wc: etc/passwd: open: No such file or directory
+       0 total
+vos-MacBook-Air:~ voduc$ wc -l /etc/passwd
+     108 /etc/passwd
+vos-MacBook-Air:~ voduc$ wc -m /etc/passwd
+    6804 /etc/passwd
+vos-MacBook-Air:~ voduc$ wc -w /etc/passwd
+     292 /etc/passwd
+vos-MacBook-Air:~ voduc$ sysctl hw.memsize
+hw.memsize: 8589934592
+vos-MacBook-Air:~ voduc$ sysctl -n hw.ncpu
+4
+vos-MacBook-Air:~ voduc$ systcl -n hw.physicalcpu
+-bash: systcl: command not found
+vos-MacBook-Air:~ voduc$ sysctl -n hw.physicalcpu
+2
+vos-MacBook-Air:~ voduc$ sysctl -n hw.logicalcpu
+4
+vos-MacBook-Air:~ voduc$ find -type f -name *.gif -0 -name *.jpg -0 -name *.bmp
+find: illegal option -- t
+usage: find [-H | -L | -P] [-EXdsx] [-f path] path ... [expression]
+       find [-H | -L | -P] [-EXdsx] -f path [path ...] [expression]
+vos-MacBook-Air:~ voduc$ 
