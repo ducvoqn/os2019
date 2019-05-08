@@ -1,0 +1,71 @@
+Last login: Wed Apr  3 10:13:29 on ttys001
+vos-MacBook-Air:~ voduc$ echo hello world
+hello world
+vos-MacBook-Air:~ voduc$ passwd
+Changing password for voduc.
+Old Password:
+New Password:
+Retype New Password:
+passwd: authentication token failure
+vos-MacBook-Air:~ voduc$ date
+Wed Apr  3 10:14:10 +07 2019
+vos-MacBook-Air:~ voduc$ hostname
+vos-MacBook-Air.local
+vos-MacBook-Air:~ voduc$ arch
+i386
+vos-MacBook-Air:~ voduc$ uname -a
+Darwin vos-MacBook-Air.local 18.2.0 Darwin Kernel Version 18.2.0: Thu Dec 20 20:46:53 PST 2018; root:xnu-4903.241.1~1/RELEASE_X86_64 x86_64
+vos-MacBook-Air:~ voduc$ dmesg
+Unable to obtain kernel buffer: Operation not permitted
+usage: sudo dmesg
+vos-MacBook-Air:~ voduc$ uptime
+10:14  up  1:26, 2 users, load averages: 1.19 1.49 1.62
+vos-MacBook-Air:~ voduc$ who am i
+voduc    ttys000  Apr  3 10:13 
+vos-MacBook-Air:~ voduc$ whoami
+voduc
+vos-MacBook-Air:~ voduc$ who
+voduc    console  Apr  3 08:48 
+voduc    ttys000  Apr  3 10:13 
+vos-MacBook-Air:~ voduc$ id
+uid=501(voduc) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),701(com.apple.sharepoint.group.1)
+vos-MacBook-Air:~ voduc$ last
+voduc     ttys000                   Wed Apr  3 10:13   still logged in
+voduc     ttys001                   Wed Apr  3 10:13 - 10:13  (00:00)
+voduc     ttys001                   Wed Apr  3 10:12 - 10:12  (00:00)
+voduc     ttys000                   Wed Apr  3 10:12 - 10:12  (00:00)
+voduc     ttys000                   Wed Apr  3 10:11 - 10:11  (00:00)
+voduc     ttys000                   Wed Apr  3 10:11 - 10:11  (00:00)
+voduc     console                   Wed Apr  3 08:48   still logged in
+reboot    ~                         Wed Apr  3 08:48 
+shutdown  ~                         Wed Apr  3 02:10 
+voduc     ttys000                   Mon Apr  1 20:56 - 20:56  (00:00)
+voduc     ttys000                   Mon Apr  1 20:53 - 20:53  (00:00)
+voduc     ttys000                   Mon Apr  1 18:07 - 18:07  (00:00)
+voduc     ttys000                   Mon Apr  1 16:23 - 16:23  (00:00)
+voduc     console                   Mon Apr  1 13:25 - 02:10 (1+12:44)
+reboot    ~                         Mon Apr  1 13:25 
+shutdown  ~                         Mon Apr  1 02:10 
+voduc     ttys000                   Fri Mar 29 09:29 - 09:29  (00:00)
+voduc     console                   Thu Mar 28 08:38 - 02:10 (3+17:31)
+reboot    ~                         Thu Mar 28 08:38 
+shutdown  ~                         Thu Mar 28 02:10 
+voduc     console                   Wed Mar 27 05:42 - 02:10  (20:27)
+reboot    ~                         Wed Mar 27 05:42 
+shutdown  ~                         Wed Mar 27 02:10 
+voduc     console                   Mon Mar 25 16:54 - 02:10 (1+09:15)
+reboot    ~                         Mon Mar 25 16:53 
+shutdown  ~                         Mon Mar 25 16:47 
+root      console                   Mon Mar 25 16:46 - shutdown  (00:00)
+
+wtmp begins Mon Mar 25 16:46 
+vos-MacBook-Air:~ voduc$ finger
+Login    Name                 TTY  Idle  Login  Time   Office  Phone
+voduc    vo duc              *con  1:26  Wed    08:48
+voduc    vo duc               s00        Wed    10:13
+vos-MacBook-Air:~ voduc$ w
+10:15  up  1:26, 2 users, load averages: 1.13 1.45 1.60
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+voduc    console  -                 8:48    1:26 -
+voduc    s000     -                10:13       - w
+vos-MacBook-Air:~ voduc$ 
