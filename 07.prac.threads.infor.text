@@ -1,0 +1,29 @@
+Last login: Thu May  9 13:52:47 on ttys002
+vos-MacBook-Air:~ voduc$ clear
+
+
+
+vos-MacBook-Air:~ voduc$ ps aux | grep -i safari
+voduc              581   0.0  0.1  4366564   6712   ??  S    Wed08AM   0:08.76 /System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/com.apple.Safari.SafeBrowsing.Service
+voduc              580   0.0  0.0  4332356   1856   ??  S    Wed08AM   0:10.12 /usr/libexec/SafariCloudHistoryPushAgent
+voduc              577   0.0  0.0  4345696   2020   ??  S    Wed08AM   0:00.31 /usr/libexec/SafariNotificationAgent
+voduc              574   0.0  0.1  4337624   7060   ??  S    Wed08AM   0:14.36 /System/Library/CoreServices/SafariSupport.bundle/Contents/MacOS/SafariBookmarksSyncAgent
+voduc              570   0.0  0.2  4347340  14472   ??  S    Wed08AM   0:15.45 /System/Library/PrivateFrameworks/SafariShared.framework/Versions/A/XPCServices/com.apple.Safari.History.xpc/Contents/MacOS/com.apple.Safari.History
+voduc             6238   0.0  0.0  4268040    788 s002  S+    1:59PM   0:00.00 grep -i safari
+voduc             6235   0.0  0.3  5386312  28144   ??  Ss    1:59PM   0:00.08 /Applications/Safari.app/Contents/PlugIns/CacheDeleteExtension.appex/Contents/MacOS/CacheDeleteExtension
+vos-MacBook-Air:~ voduc$ ps -o nlwp 577
+ps: nlwp: keyword not found
+ps: no valid keywords; valid keywords:
+%cpu %mem acflag acflg args blocked caught comm command cpu cputime etime f
+flags gid group ignored inblk inblock jobc ktrace ktracep lim login logname
+lstart majflt minflt msgrcv msgsnd ni nice nivcsw nsignals nsigs nswap nvcsw
+nwchan oublk oublock p_ru paddr pagein pcpu pending pgid pid pmem ppid pri
+pstime putime re rgid rgroup rss ruid ruser sess sig sigmask sl start stat
+state stime svgid svuid tdev time tpgid tsess tsiz tt tty ucomm uid upr user
+usrpri utime vsize vsz wchan wq wqb wql wqr xstat
+vos-MacBook-Air:~ voduc$ cat /proc/577/status
+cat: /proc/577/status: No such file or directory
+vos-MacBook-Air:~ voduc$ find /proc/577/task | wc -l
+find: /proc/577/task: No such file or directory
+       0
+vos-MacBook-Air:~ voduc$ 
